@@ -12,7 +12,13 @@ services:
       NODE_ENV: development
     depends_on:
       - redis
+      - mqtt-broker
   redis:
     image: 'redis:latest'
     ports:
       - '6379:6379'
+
+  mqtt-broker:
+    image: eclipse-mosquitto
+    ports:
+      - '1883:1883'

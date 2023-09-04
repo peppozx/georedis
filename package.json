@@ -4,12 +4,16 @@
   "main": "index.js",
   "license": "MIT",
   "dependencies": {
+    "@types/express": "^4.17.17",
     "@types/redis": "^4.0.11",
+    "express": "^4.18.2",
+    "geolib": "^3.3.4",
     "ioredis": "^5.3.2",
     "mqtt": "^5.0.4",
     "redis": "^4.6.8",
     "ts-node": "^10.9.1",
-    "typescript": "^5.2.2"
+    "typescript": "^5.2.2",
+    "uuid": "^9.0.0"
   },
   "scripts": {
     "build": "tsc",
@@ -17,6 +21,7 @@
     "start:dev": "nodemon --watch src --exec ts-node src/index.ts"
   },
   "devDependencies": {
+    "@types/uuid": "^9.0.3",
     "nodemon": "^3.0.1"
   }
 }

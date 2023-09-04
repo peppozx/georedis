@@ -1,5 +1,11 @@
 export interface VehicleLocation {
   id: string;
-  longitude: number;
-  latitude: number;
+  old?: {
+    longitude?: number;
+    latitude?: number;
+  }
+  current: {
+    longitude: number;
+    latitude: number;
+  }
 }
